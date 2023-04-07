@@ -1,7 +1,7 @@
 # Purpose:
 
-The purpose of this repo is to test and evaluate the embedded feature annotations plugin
-[HAnS](https://bitbucket.org/easelab/hans-text/src) for IntelliJ.
+The purpose of this repo is to evaluate the benefits and costs of enabling variability and traceability in source code via feature annotations
+while using the plugin [HAnS](https://bitbucket.org/easelab/hans-text/src) for IntelliJ.
 
 ### Requirements:
 
