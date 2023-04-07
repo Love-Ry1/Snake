@@ -157,4 +157,3 @@ and choose the template you want to surround the code with. It can also be found
 
 ## Study Group
 * [Group 1](./guide/group1.md)
-* [Group 2](./guide/group2.md)

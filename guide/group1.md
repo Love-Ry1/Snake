@@ -32,12 +32,6 @@ Rename (refactor) the `Position` feature to the new name `Head`, including all r
 
 ## Second part:
 
-#### Disable the plugin.
-1. Open Plugins in Settings/Preferences. Uncheck the box marked in red in the image below.
-2. Click "Apply".
-
-![](enable.png)
-
 ### Warmup task
 
 Add a file with the extension `.feature-to-folder` to the *pojo* package.
@@ -69,4 +63,4 @@ method for updating the title.
 Rename (refactor) the `Blank` feature to the new name `Background`, including all references to it.
 
 # Answer questions
-After the above tasks are completed, fill out the [survey](https://forms.gle/GDeFSyA9ZKico9KF6).
+After the above tasks are completed, fill out the [survey](https://forms.gle/JTMANWYb6tjz5sQ2A).
