@@ -155,5 +155,8 @@ and choose the template you want to surround the code with. It can also be found
 
 ![surround_with_live_template.png](./guide/Surround_with_live_template.png)
 
+### HAnS Demo Video
+https://www.youtube.com/watch?v=cx_-ZshHLgA
+
 ## Study Group
 * [Group 1](./guide/group1.md)
