@@ -21,10 +21,10 @@ public class Window extends JFrame {
 
     public static void main(String[] args) {
 
-        //Creating the window with all its awesome snaky features
+        // Creating the window with all its awesome snaky features
         f1 = new Window();
 
-        //Setting up the window settings
+        // Setting up the window settings
         f1.setTitle("Snake");
         f1.setSize(300, 300);
         f1.setVisible(true);
@@ -61,7 +61,7 @@ public class Window extends JFrame {
         Tuple position = new Tuple(10, 10);
         // passing this value to the controller
         ThreadsController c = new ThreadsController(position); // &line[Move]
-        //Let's start the game now..
+        // Let's start the game now..
         c.start();
 
         // Links the window to the KeyboardListener.

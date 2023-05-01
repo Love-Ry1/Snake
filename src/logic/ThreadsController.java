@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import pojo.Tuple;
 import graphics.Window;
 
-//Controls all the game logic .. most important class in this project.
+// Controls all the game logic .. most important class in this project.
 public class ThreadsController extends Thread {
     private final ArrayList<ArrayList<DataOfSquare>> Squares;
     private final Tuple headSnakePos;
@@ -14,12 +14,12 @@ public class ThreadsController extends Thread {
     public static Direction directionSnake;
 
     private final ArrayList<Tuple> positions = new ArrayList<>();
-    private Tuple foodPosition; // &line[Food]
+    private Tuple foodPosition;     // &line[Food]
 
-    //Constructor of ControllerThread
+    // Constructor of ControllerThread
     public ThreadsController(Tuple positionDepart) {
         //Get all the threads
-        Squares = Window.getGrid(); //&line[Playing_Area]
+        Squares = Window.getGrid();     // &line[Playing_Area]
 
         // &begin[Position]
         headSnakePos = new Tuple(positionDepart.x, positionDepart.y);
@@ -32,7 +32,7 @@ public class ThreadsController extends Thread {
 
         // &begin[Food]
         foodPosition = new Tuple(Window.getWindowHeight() - 1, Window.getWindowWidth() - 1);
-        spawnFood(foodPosition);//&line[Spawn]
+        spawnFood(foodPosition);    // &line[Spawn]
         // &end[Food]
     }
 
@@ -47,7 +47,7 @@ public class ThreadsController extends Thread {
         }
     }
 
-    //delay between each move of the snake
+    // delay between each move of the snake
     // &begin[GameState]
     private void pause() {
         try {
@@ -81,7 +81,7 @@ public class ThreadsController extends Thread {
         // &end[Food]
     }
 
-    //Stops The Game
+    // Stops The Game
     // &begin[Collision]
     private void stopTheGame(String s) {
         System.out.println(s + "\n");
@@ -91,7 +91,7 @@ public class ThreadsController extends Thread {
     }
     // &end[Collision]
 
-    //Put food in a position and displays it
+    // Put food in a position and displays it
     // &begin[Spawn]
     private void spawnFood(Tuple foodPositionIn) {
         Squares.get(foodPositionIn.x).get(foodPositionIn.y).lightMeUp(SquareToLightUp.FOOD);
@@ -99,7 +99,7 @@ public class ThreadsController extends Thread {
     // &end[Spawn]
 
     // &begin[Blank]
-    //return a position not occupied by the snake
+    // return a position not occupied by the snake
     private Tuple getTileNotInSnake() {
         Tuple p;
         int ranX = (int) (Math.random() * 19);
